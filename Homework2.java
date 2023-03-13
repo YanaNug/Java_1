@@ -1,16 +1,7 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.nio.file.Files;
+
 import java.nio.file.Path;
-
+import java.nio.file.Files;
 public class Homework2 {
-    
-
-// public static void 
-
-// // Дано четное число N (>0) и символы c1 и c2. Написать метод, который вернет строку длины N, которая состоит из чередующихся символов c1 и c2, начиная с c1. (6, 'a', 'b') -> "ababab"
-
-// }
 
 
 public static void main(String[] args) {
@@ -22,7 +13,7 @@ public static void main(String[] args) {
     saveFile(wordRepetition("Text ", 100));
 }
 
-
+// // Дано четное число N (>0) и символы c1 и c2. Написать метод, который вернет строку длины N, которая состоит из чередующихся символов c1 и c2, начиная с c1. (6, 'a', 'b') -> "ababab"
 static String characterRepetition(int n, char c1, char c2) {
     if (n % 2 == 0) {
         StringBuilder sb = new StringBuilder();
@@ -34,6 +25,7 @@ static String characterRepetition(int n, char c1, char c2) {
     } else return "n not even. Exit program.";
 }
 
+//Создать файл с названием file.txt.Если файл уже есть,создавать не надо.Записать в него Слово "TEXT" 100раз
 static String wordRepetition(String s , int n) {
     return s.repeat(n);
 }
